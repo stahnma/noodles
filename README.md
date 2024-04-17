@@ -26,9 +26,9 @@ Ensure this token is set in your shell environment where you plan to run the scr
 
 ## Building
 
-   flox activate
-   go mod tidy
-   go build .
+     flox activate
+     go mod tidy
+     go build .
 
 ## Usage
 
