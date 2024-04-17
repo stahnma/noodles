@@ -17,7 +17,7 @@ func main() {
 
     // Check for command line arguments after flags
     if flag.NArg() < 1 {
-        fmt.Println("Usage: go run script.go -stars=1000 <search-string>")
+        fmt.Printf("Usage: %s -stars=1000 <search-string>\n", os.Args[0])
         os.Exit(1)
     }
     searchString := flag.Arg(0) // Get the search string from the first non-flag argument
