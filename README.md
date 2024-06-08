@@ -11,6 +11,12 @@ This tool allows you to search GitHub repositories to find those that contain a 
 
 - Go (1.16 or later)
 - A GitHub Personal Access Token
+- Make
+
+If you want this to run in a lambda, then you you'll want:
+- AWSCLI2
+- jq (perhaps for debugging)
+
 
 ## Installation
 
@@ -29,6 +35,18 @@ Ensure this token is set in your shell environment where you plan to run the scr
      flox activate
      go mod tidy
      go build .
+
+## Running as a  lambda
+
+The `Makefile` contains targets to set up or update the code for the lambda.
+
+:warning: You will still need something to trigger the lambda, such as an API
+Gateway. Setting that up not covered in this README.
+
+To update the lambda: `make aws`
+
+To create the initial lambda `make aws-init`
+
 
 ## Usage
 

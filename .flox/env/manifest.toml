@@ -8,6 +8,8 @@
 # the `[install]` section.
 [install]
 go.pkg-path = "go"
+awscli2.pkg-path = "awscli2"
+gnumake.pkg-path = "gnumake"
 # hello.pkg-path = "hello"
 # nodejs = { version = "^18.4.2", pkg-path = "nodejs_18" }
 

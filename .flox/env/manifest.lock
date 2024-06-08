@@ -3,6 +3,12 @@
   "manifest": {
     "hook": {},
     "install": {
+      "awscli2": {
+        "pkg-path": "awscli2"
+      },
+      "gnumake": {
+        "pkg-path": "gnumake"
+      },
       "go": {
         "pkg-path": "go"
       }
@@ -38,6 +44,62 @@
   },
   "packages": {
     "aarch64-darwin": {
+      "awscli2": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "awscli2"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Unified tool to manage your AWS services",
+          "license": "Apache-2.0",
+          "pname": "awscli2",
+          "unfree": false,
+          "version": "2.13.33"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713212762,
+            "narHash": "sha256-UQwudEVEWUVjCWvGDVyq/FXo4I92hH8QFgmRqOgPN2s=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "69be1d097dd9a8422cfc4e89811304fb40f22626",
+            "type": "github"
+          },
+          "fingerprint": "618c3cd84c5464ed2402454c5e0fdba45c1b78f986009d0caf0a52fa3681d652",
+          "url": "github:NixOS/nixpkgs/69be1d097dd9a8422cfc4e89811304fb40f22626"
+        },
+        "priority": 5
+      },
+      "gnumake": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "gnumake"
+        ],
+        "info": {
+          "broken": false,
+          "description": "A tool to control the generation of non-source files from sources",
+          "license": "GPL-3.0-or-later",
+          "pname": "gnumake",
+          "unfree": false,
+          "version": "4.4.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713212762,
+            "narHash": "sha256-UQwudEVEWUVjCWvGDVyq/FXo4I92hH8QFgmRqOgPN2s=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "69be1d097dd9a8422cfc4e89811304fb40f22626",
+            "type": "github"
+          },
+          "fingerprint": "618c3cd84c5464ed2402454c5e0fdba45c1b78f986009d0caf0a52fa3681d652",
+          "url": "github:NixOS/nixpkgs/69be1d097dd9a8422cfc4e89811304fb40f22626"
+        },
+        "priority": 5
+      },
       "go": {
         "attr-path": [
           "legacyPackages",
