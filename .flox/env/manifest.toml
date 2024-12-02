@@ -1,3 +1,4 @@
+version = 1
 #
 # This is a flox environment manifest.
 # Visit flox.dev/docs/concepts/manifest/
@@ -10,6 +11,8 @@
 go.pkg-path = "go"
 awscli2.pkg-path = "awscli2"
 gnumake.pkg-path = "gnumake"
+cowsay.pkg-path = "cowsay"
+aws-sam-cli.pkg-path = "aws-sam-cli"
 # hello.pkg-path = "hello"
 # nodejs = { version = "^18.4.2", pkg-path = "nodejs_18" }
 

@@ -1,10 +1,16 @@
 {
-  "lockfile-version": 0,
+  "lockfile-version": 1,
   "manifest": {
-    "hook": {},
+    "version": 1,
     "install": {
+      "aws-sam-cli": {
+        "pkg-path": "aws-sam-cli"
+      },
       "awscli2": {
         "pkg-path": "awscli2"
+      },
+      "cowsay": {
+        "pkg-path": "cowsay"
       },
       "gnumake": {
         "pkg-path": "gnumake"
@@ -13,144 +19,170 @@
         "pkg-path": "go"
       }
     },
+    "hook": {},
+    "profile": {},
     "options": {
       "systems": [
         "aarch64-darwin"
-      ]
-    },
-    "profile": {},
-    "registry": {
-      "defaults": {
-        "subtrees": null
+      ],
+      "allow": {
+        "licenses": []
       },
-      "inputs": {
-        "nixpkgs": {
-          "from": {
-            "owner": "NixOS",
-            "ref": "release-23.11",
-            "repo": "nixpkgs",
-            "type": "github"
-          },
-          "subtrees": [
-            "legacyPackages"
-          ]
-        }
-      },
-      "priority": [
-        "nixpkgs"
-      ]
-    },
-    "vars": {}
-  },
-  "packages": {
-    "aarch64-darwin": {
-      "awscli2": {
-        "attr-path": [
-          "legacyPackages",
-          "aarch64-darwin",
-          "awscli2"
-        ],
-        "info": {
-          "broken": false,
-          "description": "Unified tool to manage your AWS services",
-          "license": "Apache-2.0",
-          "pname": "awscli2",
-          "unfree": false,
-          "version": "2.13.33"
-        },
-        "input": {
-          "attrs": {
-            "lastModified": 1713212762,
-            "narHash": "sha256-UQwudEVEWUVjCWvGDVyq/FXo4I92hH8QFgmRqOgPN2s=",
-            "owner": "NixOS",
-            "repo": "nixpkgs",
-            "rev": "69be1d097dd9a8422cfc4e89811304fb40f22626",
-            "type": "github"
-          },
-          "fingerprint": "618c3cd84c5464ed2402454c5e0fdba45c1b78f986009d0caf0a52fa3681d652",
-          "url": "github:NixOS/nixpkgs/69be1d097dd9a8422cfc4e89811304fb40f22626"
-        },
-        "priority": 5
-      },
-      "gnumake": {
-        "attr-path": [
-          "legacyPackages",
-          "aarch64-darwin",
-          "gnumake"
-        ],
-        "info": {
-          "broken": false,
-          "description": "A tool to control the generation of non-source files from sources",
-          "license": "GPL-3.0-or-later",
-          "pname": "gnumake",
-          "unfree": false,
-          "version": "4.4.1"
-        },
-        "input": {
-          "attrs": {
-            "lastModified": 1713212762,
-            "narHash": "sha256-UQwudEVEWUVjCWvGDVyq/FXo4I92hH8QFgmRqOgPN2s=",
-            "owner": "NixOS",
-            "repo": "nixpkgs",
-            "rev": "69be1d097dd9a8422cfc4e89811304fb40f22626",
-            "type": "github"
-          },
-          "fingerprint": "618c3cd84c5464ed2402454c5e0fdba45c1b78f986009d0caf0a52fa3681d652",
-          "url": "github:NixOS/nixpkgs/69be1d097dd9a8422cfc4e89811304fb40f22626"
-        },
-        "priority": 5
-      },
-      "go": {
-        "attr-path": [
-          "legacyPackages",
-          "aarch64-darwin",
-          "go"
-        ],
-        "info": {
-          "broken": false,
-          "description": "The Go Programming language",
-          "license": "BSD-3-Clause",
-          "pname": "go",
-          "unfree": false,
-          "version": "1.21.9"
-        },
-        "input": {
-          "attrs": {
-            "lastModified": 1713212762,
-            "narHash": "sha256-UQwudEVEWUVjCWvGDVyq/FXo4I92hH8QFgmRqOgPN2s=",
-            "owner": "NixOS",
-            "repo": "nixpkgs",
-            "rev": "69be1d097dd9a8422cfc4e89811304fb40f22626",
-            "type": "github"
-          },
-          "fingerprint": "618c3cd84c5464ed2402454c5e0fdba45c1b78f986009d0caf0a52fa3681d652",
-          "url": "github:NixOS/nixpkgs/69be1d097dd9a8422cfc4e89811304fb40f22626"
-        },
-        "priority": 5
-      }
+      "semver": {}
     }
   },
-  "registry": {
-    "defaults": {
-      "subtrees": null
+  "packages": [
+    {
+      "attr_path": "aws-sam-cli",
+      "broken": false,
+      "derivation": "/nix/store/z1iqdrc20s640qp1z5lb34lngdgqyxxb-aws-sam-cli-1.127.0.drv",
+      "description": "CLI tool for local development and testing of Serverless applications",
+      "install_id": "aws-sam-cli",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "aws-sam-cli-1.127.0",
+      "pname": "aws-sam-cli",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.127.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/9llp26wxh7r06q2xnws0jc4jcsm1jzwp-aws-sam-cli-1.127.0-dist",
+        "out": "/nix/store/6320j7p1f0090svcxqv12axdwimg3363-aws-sam-cli-1.127.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
     },
-    "inputs": {
-      "nixpkgs": {
-        "from": {
-          "lastModified": 1713212762,
-          "narHash": "sha256-UQwudEVEWUVjCWvGDVyq/FXo4I92hH8QFgmRqOgPN2s=",
-          "owner": "NixOS",
-          "repo": "nixpkgs",
-          "rev": "69be1d097dd9a8422cfc4e89811304fb40f22626",
-          "type": "github"
-        },
-        "subtrees": [
-          "legacyPackages"
-        ]
-      }
+    {
+      "attr_path": "awscli2",
+      "broken": false,
+      "derivation": "/nix/store/pdamq6qbv9f5b11qlyybxw6nm73qslzs-awscli2-2.19.0.drv",
+      "description": "Unified tool to manage your AWS services",
+      "install_id": "awscli2",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "awscli2-2.19.0",
+      "pname": "awscli2",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.19.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/sm98sx2dnyckbld8db9sqwmnyidypyfv-awscli2-2.19.0-dist",
+        "out": "/nix/store/idqz4kl7kyprr78wg7j7b1sk7yrj6ha1-awscli2-2.19.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
     },
-    "priority": [
-      "nixpkgs"
-    ]
-  }
+    {
+      "attr_path": "cowsay",
+      "broken": false,
+      "derivation": "/nix/store/sn5n3inpdyhp00caakl3qj2zlhahix4z-cowsay-3.8.3.drv",
+      "description": "Program which generates ASCII pictures of a cow with a message",
+      "install_id": "cowsay",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "cowsay-3.8.3",
+      "pname": "cowsay",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.8.3",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/b1292ns2xbmb2xz7a2p6ankcd0p1i2i4-cowsay-3.8.3-man",
+        "out": "/nix/store/kdn12f7lgcnyjxyqjfzd0hfsjrxjzb2n-cowsay-3.8.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/ld3qr4qalsc8i0si45fhjysnd8zkllxl-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "info": "/nix/store/00ypq3z6m7imw786m7fcdr6f0f384s90-gnumake-4.4.1-info",
+        "man": "/nix/store/7k3yfg53wlkfxjaflnh8cswkpdz1xm8z-gnumake-4.4.1-man",
+        "out": "/nix/store/0gqbh56qwj0cxmvl7dajic9mkbc26ilc-gnumake-4.4.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "go",
+      "broken": false,
+      "derivation": "/nix/store/mv8bpnbfg4j1gc7vnsq6glxdnrnz5smr-go-1.23.3.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "go-1.23.3",
+      "pname": "go",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.23.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qrj2wp6vzfpjfrrlcmr22818zg83fb73-go-1.23.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
 }

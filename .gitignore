@@ -1,3 +1,5 @@
 noodles
 *.zip
 bootstrap
+.flox/log/
+.env
