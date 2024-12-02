@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        header h1 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+        .aws-logo {
+            margin-left: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Flox Logo -->
+        <img src="https://i.imgur.com/yToPabu.png" alt="Flox Logo">
+        <h1>GitHub Repository Viewer</h1>
+        <!-- AWS Logo -->
+        <a class="aws-logo" href="https://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://d0.awsstatic.com/logos/powered-by-aws.png" alt="Powered by AWS Cloud Computing">
+        </a>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="query" placeholder="Enter search term" onkeydown="triggerSearch(event)" />
+        <input type="number" id="stars" placeholder="Minimum stars" min="0" onkeydown="triggerSearch(event)" />
+        <button class="btn" onclick="loadData()">Search</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Repository</th>
+                <th>Stars</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        <tbody id="results">
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Function to handle Enter key press
+        function triggerSearch(event) {
+            if (event.key === "Enter") {
+                loadData(); // Call the search function
+            }
+        }
+
+        async function loadData() {
+            const query = document.getElementById('query').value.trim();
+            const stars = document.getElementById('stars').value.trim();
+
+            if (!query && !stars) {
+                alert("Please enter a search term or minimum stars.");
+                return;
+            }
+
+            try {
+                let url = `http://localhost:3000/proxy?`;
+                if (query) url += `search=${encodeURIComponent(query)}&`;
+                if (stars) url += `stars=${encodeURIComponent(stars)}`;
+
+                console.log(`Requesting API URL: ${url}`);
+
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP error: ${response.status}`);
+                }
+
+                const data = await response.json();
+                console.log("API response:", data);
+
+                const results = document.getElementById('results');
+                results.innerHTML = '';
+
+                if (data.length === 0) {
+                    const emptyMessage = document.createElement('tr');
+                    emptyMessage.innerHTML = '<td colspan="3" style="text-align: center;">No matching results found.</td>';
+                    results.appendChild(emptyMessage);
+                    return;
+                }
+
+                data.forEach(repo => {
+                    const row = document.createElement('tr');
+
+                    const slugCell = document.createElement('td');
+                    slugCell.textContent = repo.slug;
+
+                    const starsCell = document.createElement('td');
+                    starsCell.textContent = repo.stars;
+
+                    const urlCell = document.createElement('td');
+                    const link = document.createElement('a');
+                    link.href = repo.url;
+                    link.target = '_blank';
+                    link.textContent = repo.url;
+                    urlCell.appendChild(link);
+
+                    row.appendChild(slugCell);
+                    row.appendChild(starsCell);
+                    row.appendChild(urlCell);
+
+                    results.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error loading data:', error);
+                const results = document.getElementById('results');
+                results.innerHTML = '<tr><td colspan="3" style="text-align: center;">Unable to load data. It\'s possible this query returned nothing, or it\'s possible that something really terrible has happened.</td></tr>';
+            }
+        }
+    </script>
+</body>
+</html>
+

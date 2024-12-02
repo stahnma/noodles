@@ -75,14 +75,16 @@ func searchGitHub(searchString string, minStars int) ([]RepositoryResult, error)
 }
 
 // Lambda handler function
-
 func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	searchString := request.QueryStringParameters["search"]
 	minStarsStr := request.QueryStringParameters["stars"]
 
 	if searchString == "" {
 		log.Printf("Missing 'search' parameter")
-		return events.APIGatewayProxyResponse{StatusCode: 400, Body: "search parameter is required"}, nil
+		return events.APIGatewayProxyResponse{
+			StatusCode: 400,
+			Body:       "search parameter is required",
+		}, nil
 	}
 
 	minStars, err := strconv.Atoi(minStarsStr)
@@ -94,7 +96,22 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	results, err := searchGitHub(searchString, minStars)
 	if err != nil {
 		log.Printf("Error during GitHub search: %v", err)
-		return events.APIGatewayProxyResponse{StatusCode: 500, Body: "Internal server error"}, nil
+		return events.APIGatewayProxyResponse{
+			StatusCode: 500,
+			Body:       "Internal server error",
+		}, nil
+	}
+
+	// If no results, return 200 with an empty array
+	if len(results) == 0 {
+		log.Printf("No results found for search: '%s', minStars: %d", searchString, minStars)
+		return events.APIGatewayProxyResponse{
+			StatusCode: 200,
+			Headers: map[string]string{
+				"Content-Type": "application/json",
+			},
+			Body: "[]", // Empty JSON array
+		}, nil
 	}
 
 	// Normalize headers to lowercase
@@ -125,7 +142,10 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	jsonResponse, err := json.Marshal(results)
 	if err != nil {
 		log.Printf("Error marshaling JSON: %v", err)
-		return events.APIGatewayProxyResponse{StatusCode: 500, Body: "Internal server error"}, nil
+		return events.APIGatewayProxyResponse{
+			StatusCode: 500,
+			Body:       "Internal server error",
+		}, nil
 	}
 
 	return events.APIGatewayProxyResponse{

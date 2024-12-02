@@ -1,0 +1,556 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "gnumake": {
+        "pkg-path": "gnumake"
+      },
+      "jq": {
+        "pkg-path": "jq"
+      },
+      "nodejs": {
+        "pkg-path": "nodejs"
+      },
+      "python3": {
+        "pkg-path": "python3"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {
+      "systems": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+      ],
+      "allow": {
+        "licenses": []
+      },
+      "semver": {}
+    },
+    "services": {
+      "frontend": {
+        "command": "python -m http.server",
+        "vars": null,
+        "is-daemon": null,
+        "shutdown": null,
+        "systems": null
+      },
+      "proxy": {
+        "command": "node proxy.mjs",
+        "vars": null,
+        "is-daemon": null,
+        "shutdown": null,
+        "systems": null
+      }
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/ld3qr4qalsc8i0si45fhjysnd8zkllxl-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "info": "/nix/store/00ypq3z6m7imw786m7fcdr6f0f384s90-gnumake-4.4.1-info",
+        "man": "/nix/store/7k3yfg53wlkfxjaflnh8cswkpdz1xm8z-gnumake-4.4.1-man",
+        "out": "/nix/store/0gqbh56qwj0cxmvl7dajic9mkbc26ilc-gnumake-4.4.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/1q1pqa74dr4sgzzy8szzsw27faa58lpi-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "debug": "/nix/store/yyh2bg6gf2fkg1naqndr21zim3i60l2c-gnumake-4.4.1-debug",
+        "info": "/nix/store/ai7s9s57h8283r7rpbw4d7nbq7hgx3ac-gnumake-4.4.1-info",
+        "man": "/nix/store/fb4zh233hgpx37wzm6gv56hvqzcl8lp0-gnumake-4.4.1-man",
+        "out": "/nix/store/4n915dnxxga9hd6djx0k3g311ww1ga8v-gnumake-4.4.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/f6hgzkb9gzg5aiwix6la22fdz9vm0m1f-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "info": "/nix/store/99iicq73zij6klmpw3lhcy1kh95lnl63-gnumake-4.4.1-info",
+        "man": "/nix/store/8a3bjif0mwlhm7pybzclp5hlswmmcjd5-gnumake-4.4.1-man",
+        "out": "/nix/store/wqz4s9ij68jmnp7nphvkh22cbfapmk1w-gnumake-4.4.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/sdylskd3c6hp3wsnhy3r18jhipifnfyx-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "debug": "/nix/store/z66scq04p9khp2p47y7gwjzlp18rkflj-gnumake-4.4.1-debug",
+        "info": "/nix/store/vxki0gd4zq5ighs0y2g629r763mm3n7a-gnumake-4.4.1-info",
+        "man": "/nix/store/zs8ijd334lhdnghc7n24z0bq7w7f7dc0-gnumake-4.4.1-man",
+        "out": "/nix/store/7nvps9mhddbqfhpbwsw87dh0nql2kljb-gnumake-4.4.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jq",
+      "broken": false,
+      "derivation": "/nix/store/cbv85z7dsvkmskklg821vvp8vwpr4hf1-jq-1.7.1.drv",
+      "description": "Lightweight and flexible command-line JSON processor",
+      "install_id": "jq",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "jq-1.7.1",
+      "pname": "jq",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/1ayrnq8zpljx4m3kvgfs6kqv9vrm6zik-jq-1.7.1-bin",
+        "dev": "/nix/store/05c8mk6qnrxgyazs2acg3816h57lvsvb-jq-1.7.1-dev",
+        "doc": "/nix/store/zm4966xz8nyp9nzkn6ghhzh8hcw87bmv-jq-1.7.1-doc",
+        "man": "/nix/store/fy9h4wlb4a8r34jrqif25n2i24vaw9x2-jq-1.7.1-man",
+        "out": "/nix/store/1ldq0nn6gjpxqjxihzdd7vlppmxvmpxn-jq-1.7.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jq",
+      "broken": false,
+      "derivation": "/nix/store/6zzykid21phpdi914nag9sb36an76iy9-jq-1.7.1.drv",
+      "description": "Lightweight and flexible command-line JSON processor",
+      "install_id": "jq",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "jq-1.7.1",
+      "pname": "jq",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/pixiqvakc6rxc10qfpy2w4dsgnmsdayv-jq-1.7.1-bin",
+        "dev": "/nix/store/gn12vqlhg68r5gwsacsiksqm6255nl3s-jq-1.7.1-dev",
+        "doc": "/nix/store/v8cvxadadrrvi8as046wiyzb96xvih19-jq-1.7.1-doc",
+        "man": "/nix/store/fgjncriv2sc52b8lwm5kzabkq26kirvk-jq-1.7.1-man",
+        "out": "/nix/store/5xm3x3a9jaq9fy4jrg44rk7b6hl9sgbv-jq-1.7.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jq",
+      "broken": false,
+      "derivation": "/nix/store/b2m8mmxr0wgqwhqnv5wgd9455kq2mzl0-jq-1.7.1.drv",
+      "description": "Lightweight and flexible command-line JSON processor",
+      "install_id": "jq",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "jq-1.7.1",
+      "pname": "jq",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/g6m0ggpijkm26ygd8vvhyd07sgriz26j-jq-1.7.1-bin",
+        "dev": "/nix/store/cybp745j7fvdnxkf9889wiscn9cgbwjp-jq-1.7.1-dev",
+        "doc": "/nix/store/0yhbxjsrbh7g6x7ngfc1qg6q613qbqhp-jq-1.7.1-doc",
+        "man": "/nix/store/gr5mmlwr3y511brhq7nihbyixjhcn80k-jq-1.7.1-man",
+        "out": "/nix/store/ganc2d577ffr1h3qcvxln1d5gn6z3m83-jq-1.7.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jq",
+      "broken": false,
+      "derivation": "/nix/store/v9r017rn3g6zfz45ncra2bb93qafxipm-jq-1.7.1.drv",
+      "description": "Lightweight and flexible command-line JSON processor",
+      "install_id": "jq",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "jq-1.7.1",
+      "pname": "jq",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/75q9nlm0zn7cg6w151cc4mkqqk0mwaxa-jq-1.7.1-bin",
+        "dev": "/nix/store/f5y04jklz034w0y55bnqhcfnd271spwa-jq-1.7.1-dev",
+        "doc": "/nix/store/j0i0bzx90l10l3vxdwj29xjji1avp15a-jq-1.7.1-doc",
+        "man": "/nix/store/3wwkjcpxyrryfb1dbxjp82kj8g8jaxzw-jq-1.7.1-man",
+        "out": "/nix/store/cpzlrkcbp2s87aya4hfxigj6a68m6yzz-jq-1.7.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/v0v7dny82f4hmfp9s8zj31iykjrdblkn-nodejs-20.18.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "nodejs-20.18.0",
+      "pname": "nodejs",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "20.18.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/hfchgw1as9fm02wcyr3iqya05ylll5f3-nodejs-20.18.0-libv8",
+        "out": "/nix/store/9grahx8677nlgbx3yfiggibw335lkgfr-nodejs-20.18.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/d3mn4dx774ppvnajxls24jkgsscv4sq5-nodejs-20.18.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "nodejs-20.18.0",
+      "pname": "nodejs",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "20.18.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/yajvza262cb3bri9cryfrgpm3pvc066n-nodejs-20.18.0-libv8",
+        "out": "/nix/store/hsh74yzdb9yk834w9j5qz0w3sw84wcfv-nodejs-20.18.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/lmn1hdq8i3gf5d3r64l13nhanlb2pnx5-nodejs-20.18.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "nodejs-20.18.0",
+      "pname": "nodejs",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "20.18.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/93xdzgjsm1dnnw33lnba4i7h7k5yph4k-nodejs-20.18.0-libv8",
+        "out": "/nix/store/v8p36abnvrn9i5h41zkgrayaj7sclv6z-nodejs-20.18.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/l136ajs6lg3mic58rnb7cdwhfhl3qcyr-nodejs-20.18.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "nodejs-20.18.0",
+      "pname": "nodejs",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "20.18.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/czcxwki3zqih2pf355zk0vxbmrij2bzx-nodejs-20.18.0-libv8",
+        "out": "/nix/store/z0ivg3dbal4sk5h0c7p1pfkxc7ff98ri-nodejs-20.18.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3",
+      "broken": false,
+      "derivation": "/nix/store/m8mnjdqkq6pp69hf4lsqd1pmx3yqnmdy-python3-3.12.7.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python3",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "python3-3.12.7",
+      "pname": "python3",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/zyak8iqzh1ww83qa4sqwwz3qax0lrky7-python3-3.12.7"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3",
+      "broken": false,
+      "derivation": "/nix/store/ni1cpv0m2lcpzd8c0g0f0hy86r405h5d-python3-3.12.7.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python3",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "python3-3.12.7",
+      "pname": "python3",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/fdldrf7jicbx1v2yn2jj4rp1gwcin5vy-python3-3.12.7-debug",
+        "out": "/nix/store/imz4prdh762l7jvwak2s7pqpq6hy5fyy-python3-3.12.7"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3",
+      "broken": false,
+      "derivation": "/nix/store/2my4flhwy6npmzmq9l8cb83c5a4v7b4b-python3-3.12.7.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python3",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "python3-3.12.7",
+      "pname": "python3",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/q2vqbhlx0i0k5bfavk04wiknrf7ygqls-python3-3.12.7"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3",
+      "broken": false,
+      "derivation": "/nix/store/dg5sw7q1rk0fjy6d91asvgf603j8k1qb-python3-3.12.7.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python3",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "name": "python3-3.12.7",
+      "pname": "python3",
+      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "rev_count": 713897,
+      "rev_date": "2024-11-28T23:45:21Z",
+      "scrape_date": "2024-12-01T03:54:50Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/l13c89ykx82ffm2y025fnngszchsgq6b-python3-3.12.7-debug",
+        "out": "/nix/store/px2nj16i5gc3d4mnw5l1nclfdxhry61p-python3-3.12.7"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
