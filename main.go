@@ -75,26 +75,27 @@ func searchGitHub(searchString string, minStars int) ([]RepositoryResult, error)
 }
 
 // Lambda handler function
+
 func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	searchString := request.QueryStringParameters["search"]
 	minStarsStr := request.QueryStringParameters["stars"]
 
 	if searchString == "" {
+		log.Printf("Missing 'search' parameter")
 		return events.APIGatewayProxyResponse{StatusCode: 400, Body: "search parameter is required"}, nil
 	}
 
 	minStars, err := strconv.Atoi(minStarsStr)
 	if err != nil || minStars < 0 {
+		log.Printf("Invalid 'stars' parameter: %v", minStarsStr)
 		minStars = 1000 // Default value
 	}
 
 	results, err := searchGitHub(searchString, minStars)
 	if err != nil {
-		return events.APIGatewayProxyResponse{StatusCode: 500, Body: fmt.Sprintf("Error: %s", err)}, nil
+		log.Printf("Error during GitHub search: %v", err)
+		return events.APIGatewayProxyResponse{StatusCode: 500, Body: "Internal server error"}, nil
 	}
-
-	// Log headers for debugging
-	log.Printf("Headers: %+v", request.Headers)
 
 	// Normalize headers to lowercase
 	acceptHeader := ""
@@ -123,7 +124,8 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	// Default to JSON output
 	jsonResponse, err := json.Marshal(results)
 	if err != nil {
-		return events.APIGatewayProxyResponse{StatusCode: 500, Body: fmt.Sprintf("Error marshaling JSON: %s", err)}, nil
+		log.Printf("Error marshaling JSON: %v", err)
+		return events.APIGatewayProxyResponse{StatusCode: 500, Body: "Internal server error"}, nil
 	}
 
 	return events.APIGatewayProxyResponse{
@@ -163,6 +165,16 @@ func main() {
 		os.Exit(1)
 	}
 
+	// Check if stdout is a TTY
+	if isTTY() && !*outputJSON {
+		// Output only slugs, one per line
+		for _, repo := range results {
+			fmt.Println(repo.Slug)
+		}
+		return
+	}
+
+	// Handle JSON or full details
 	if *outputJSON {
 		var jsonOutput []byte
 		if isTTY() {
