@@ -73,6 +73,21 @@ To search for repositories with the default star setting (1000 stars) that inclu
 
 Contributions are welcome! Please feel free to submit pull requests or open issues to suggest improvements or add new features.
 
+# Demo stuff
+
+If you want a demo using Flox to do some neat things, this is a good project for that. 
+
+You can:
+
+1. Build `noodles` and then set it up as a Lambda. If you've configured the lambda and API Gateway, you can then run the lambda from the API Gateway using `make aws` from the `noodles` directory.
+2. There is a front end in the `front` directory. It uses `flox services` to show off the services component and runs a web application and proxy to get around CORS restrictions from API gateway.
+
+To run the front end
+
+    cd front
+    flox activate -s
+
+
 ## License
 
 WTFPL
