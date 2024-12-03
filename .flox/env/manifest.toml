@@ -8,11 +8,10 @@ version = 1
 # List packages you wish to install in your environment inside
 # the `[install]` section.
 [install]
-go.pkg-path = "go"
 awscli2.pkg-path = "awscli2"
 gnumake.pkg-path = "gnumake"
-cowsay.pkg-path = "cowsay"
 aws-sam-cli.pkg-path = "aws-sam-cli"
+go.pkg-path = "go"
 # hello.pkg-path = "hello"
 # nodejs = { version = "^18.4.2", pkg-path = "nodejs_18" }
 

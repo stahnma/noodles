@@ -16,7 +16,9 @@
         "pkg-path": "python3"
       }
     },
-    "hook": {},
+    "hook": {
+      "on-activate": "echo '     ╔═════════════════════════════════════════════════════╗'\necho '     ║                                                     ║'\necho '     ║  There are two services in this environment.        ║'\necho '     ║  You can start them using \"flox services start\"     ║'\necho '     ║                                                     ║'\necho '     ║  This will start services for the web front end     ║'\necho '     ║    and a proxy.                                     ║'\necho '     ║                                                     ║'\necho '     ║  Visit port http://localhost:3000 for               ║' \necho '     ║    developement work.                               ║'\necho '     ║                                                     ║'\necho '     ╚═════════════════════════════════════════════════════╝'\n"
+    },
     "profile": {},
     "options": {
       "systems": [

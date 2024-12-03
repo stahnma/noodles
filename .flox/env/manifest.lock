@@ -9,9 +9,6 @@
       "awscli2": {
         "pkg-path": "awscli2"
       },
-      "cowsay": {
-        "pkg-path": "cowsay"
-      },
       "gnumake": {
         "pkg-path": "gnumake"
       },
@@ -87,37 +84,6 @@
       "outputs": {
         "dist": "/nix/store/sm98sx2dnyckbld8db9sqwmnyidypyfv-awscli2-2.19.0-dist",
         "out": "/nix/store/idqz4kl7kyprr78wg7j7b1sk7yrj6ha1-awscli2-2.19.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "cowsay",
-      "broken": false,
-      "derivation": "/nix/store/sn5n3inpdyhp00caakl3qj2zlhahix4z-cowsay-3.8.3.drv",
-      "description": "Program which generates ASCII pictures of a cow with a message",
-      "install_id": "cowsay",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
-      "name": "cowsay-3.8.3",
-      "pname": "cowsay",
-      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
-      "rev_count": 713897,
-      "rev_date": "2024-11-28T23:45:21Z",
-      "scrape_date": "2024-12-01T03:54:50Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.8.3",
-      "outputs_to_install": [
-        "out",
-        "man"
-      ],
-      "outputs": {
-        "man": "/nix/store/b1292ns2xbmb2xz7a2p6ankcd0p1i2i4-cowsay-3.8.3-man",
-        "out": "/nix/store/kdn12f7lgcnyjxyqjfzd0hfsjrxjzb2n-cowsay-3.8.3"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
