@@ -12,6 +12,7 @@ nodejs.pkg-path = "nodejs"
 jq.pkg-path = "jq"
 python3.pkg-path = "python3"
 gnumake.pkg-path = "gnumake"
+bash.pkg-path = "bash"
 # hello.pkg-path = "hello"
 # nodejs = { version = "^20.15.1", pkg-path = "nodejs" }
 
