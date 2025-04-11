@@ -1,58 +1,81 @@
+## Flox Environment Manifest -----------------------------------------
+##
+##   _Everything_ you need to know about the _manifest_ is here:
+##
+##               https://flox.dev/docs/concepts/manifest
+##
+## -------------------------------------------------------------------
+# Flox manifest version managed by Flox CLI
 version = 1
-#
-# This is a flox environment manifest.
-# Visit flox.dev/docs/concepts/manifest/
-# or see flox-edit(1), manifest.toml(1) for more information.
-#
 
-# List packages you wish to install in your environment inside
-# the `[install]` section.
+
+## Install Packages --------------------------------------------------
+##  $ flox install gum  <- puts a package in [install] section below
+##  $ flox search gum   <- search for a package
+##  $ flox show gum     <- show all versions of a package
+## -------------------------------------------------------------------
 [install]
 awscli2.pkg-path = "awscli2"
 gnumake.pkg-path = "gnumake"
 aws-sam-cli.pkg-path = "aws-sam-cli"
 go.pkg-path = "go"
-# hello.pkg-path = "hello"
-# nodejs = { version = "^18.4.2", pkg-path = "nodejs_18" }
 
 
-# Set environment variables in the `[vars]` section.  These variables may not
-# reference once another, and are added to the environment without first
-# expanding them.  THey are available for use in the `[profile]` and `[hook]`
-# scripts.
+## Environment Variables ---------------------------------------------
+##  ... available for use in the activated environment
+##      as well as [hook], [profile] scripts and [services] below.
+## -------------------------------------------------------------------
 [vars]
-# message = "Howdy"
+# INTRO_MESSAGE = "It's gettin' Flox in here"
 
-# Scripts defined in the `[profile]` section are sourced by your shell
-# immediately after entering the environment and provide a way to add shell
-# aliases to the environment or dynamically compute environment variables.  The
-# `profile.common` script is sourced by all shells, so you must write it to be
-# compatible with all shells. The `profile.bash` and `profile.zsh` scripts will
-# only be sourced by the corresponding shell after sourcing the `profile.common`
-# script.
-[profile]
-# common = """
-#   echo "it's gettin flox in here";
-# """
 
-# The script defined in `hook.on-activate` is run in a non-interactive Bash
-# sub-shell after sourcing the profile scripts. This script inherits all the
-# environment variables set in the `[vars]` and `[profile]` sections, but since
-# it runs in a sub-shell it can't modify them. The output and exit code of the
-# hook script is discarded. The utility of the `hook` script is that it runs in
-# a consistent shell environment so you don't have to worry about shell
-# compatibility during complicated initialization.
+## Activation Hook ---------------------------------------------------
+##  ... run by _bash_ shell when you run 'flox activate'.
+## -------------------------------------------------------------------
 [hook]
-# on-activate = """
-#     mkdir my_data_dir
-# """
+# on-activate = '''
+#   # -> Set variables, create files and directories
+#   # -> Perform initialization steps, e.g. create a python venv
+#   # -> Useful environment variables:
+#   #      - FLOX_ENV_PROJECT=/home/user/example
+#   #      - FLOX_ENV=/home/user/example/.flox/run
+#   #      - FLOX_ENV_CACHE=/home/user/example/.flox/cache
+# '''
 
-# Additional options can be set in the `[options]` section.  Refer to
-# manifest.toml(1) for a list of available options.
+
+## Profile script ----------------------------------------------------
+## ... sourced by _your shell_ when you run 'flox activate'.
+## -------------------------------------------------------------------
+[profile]
+# common = '''
+#   gum style \
+#   --foreground 212 --border-foreground 212 --border double \
+#   --align center --width 50 --margin "1 2" --padding "2 4" \
+#     $INTRO_MESSAGE
+# '''
+## Shell specific profiles go here:
+# bash = ...
+# zsh  = ...
+# fish = ...
+
+
+## Services ----------------------------------------------------------
+##  $ flox services start             <- Starts all services
+##  $ flox services status            <- Status of running services
+##  $ flox activate --start-services  <- Activates & starts all
+## -------------------------------------------------------------------
+[services]
+# myservice.command = "python3 -m http.server"
+
+
+## Other Environment Options -----------------------------------------
 [options]
-
-# An environment that works on one system is guaranteed to work on the same type
-# of system, but other systems may not have the same packages available, etc.
-# In order to use the environment on a system you must explicitly add it to the
-# `options.systems` list.
-systems = ["aarch64-darwin"]
+# Systems that environment is compatible with
+systems = [
+  "aarch64-darwin",
+  "aarch64-linux",
+  "x86_64-darwin",
+  "x86_64-linux",
+]
+# Uncomment to disable CUDA detection.
+# cuda-detection = false
