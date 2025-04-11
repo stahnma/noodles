@@ -32,28 +32,28 @@
     {
       "attr_path": "aws-sam-cli",
       "broken": false,
-      "derivation": "/nix/store/z1iqdrc20s640qp1z5lb34lngdgqyxxb-aws-sam-cli-1.127.0.drv",
+      "derivation": "/nix/store/iv7xx9zsvfx9y5lfsc24q4lbnvmywfxf-aws-sam-cli-1.135.0.drv",
       "description": "CLI tool for local development and testing of Serverless applications",
       "install_id": "aws-sam-cli",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
-      "name": "aws-sam-cli-1.127.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "aws-sam-cli-1.135.0",
       "pname": "aws-sam-cli",
-      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
-      "rev_count": 713897,
-      "rev_date": "2024-11-28T23:45:21Z",
-      "scrape_date": "2024-12-01T03:54:50Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:10:54.996178Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.127.0",
+      "version": "1.135.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/9llp26wxh7r06q2xnws0jc4jcsm1jzwp-aws-sam-cli-1.127.0-dist",
-        "out": "/nix/store/6320j7p1f0090svcxqv12axdwimg3363-aws-sam-cli-1.127.0"
+        "dist": "/nix/store/79jb0gs6rb52v93pnh73gl8b66c74kgh-aws-sam-cli-1.135.0-dist",
+        "out": "/nix/store/d5gi5z9hddb6vd34z07l1aar04rji0lm-aws-sam-cli-1.135.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -62,28 +62,28 @@
     {
       "attr_path": "awscli2",
       "broken": false,
-      "derivation": "/nix/store/pdamq6qbv9f5b11qlyybxw6nm73qslzs-awscli2-2.19.0.drv",
+      "derivation": "/nix/store/k1ajb38gkbw2bfqjjrgd31al2g83ndjq-awscli2-2.25.5.drv",
       "description": "Unified tool to manage your AWS services",
       "install_id": "awscli2",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
-      "name": "awscli2-2.19.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "awscli2-2.25.5",
       "pname": "awscli2",
-      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
-      "rev_count": 713897,
-      "rev_date": "2024-11-28T23:45:21Z",
-      "scrape_date": "2024-12-01T03:54:50Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:10:54.997078Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.19.0",
+      "version": "2.25.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/sm98sx2dnyckbld8db9sqwmnyidypyfv-awscli2-2.19.0-dist",
-        "out": "/nix/store/idqz4kl7kyprr78wg7j7b1sk7yrj6ha1-awscli2-2.19.0"
+        "dist": "/nix/store/72572qfdijiczj2mg45csdgvw2r4xsi7-awscli2-2.25.5-dist",
+        "out": "/nix/store/rd7mfq8k5zms6nb2anzkgjnz3b8k6k8y-awscli2-2.25.5"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -92,30 +92,30 @@
     {
       "attr_path": "gnumake",
       "broken": false,
-      "derivation": "/nix/store/ld3qr4qalsc8i0si45fhjysnd8zkllxl-gnumake-4.4.1.drv",
+      "derivation": "/nix/store/z0vyvvm3cqlwx4wxm7vs3y2n0yvb13l5-gnumake-4.4.1.drv",
       "description": "Tool to control the generation of non-source files from sources",
       "install_id": "gnumake",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
       "name": "gnumake-4.4.1",
       "pname": "gnumake",
-      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
-      "rev_count": 713897,
-      "rev_date": "2024-11-28T23:45:21Z",
-      "scrape_date": "2024-12-01T03:54:50Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:10:55.790120Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
       "version": "4.4.1",
       "outputs_to_install": [
-        "out",
-        "man"
+        "man",
+        "out"
       ],
       "outputs": {
-        "info": "/nix/store/00ypq3z6m7imw786m7fcdr6f0f384s90-gnumake-4.4.1-info",
-        "man": "/nix/store/7k3yfg53wlkfxjaflnh8cswkpdz1xm8z-gnumake-4.4.1-man",
-        "out": "/nix/store/0gqbh56qwj0cxmvl7dajic9mkbc26ilc-gnumake-4.4.1"
+        "info": "/nix/store/c5jccx4albc6g0fcxa4ghwg27945fnby-gnumake-4.4.1-info",
+        "man": "/nix/store/mvygvl0jxvci87m9j9r393ri5jsz2ybq-gnumake-4.4.1-man",
+        "out": "/nix/store/cnkfqpa3kyi3mgk0yd8lqbrdysq7j38q-gnumake-4.4.1"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -124,27 +124,27 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/mv8bpnbfg4j1gc7vnsq6glxdnrnz5smr-go-1.23.3.drv",
+      "derivation": "/nix/store/2r15swr64lijifk39p1s8pz1qdzz61av-go-1.24.1.drv",
       "description": "Go Programming language",
       "install_id": "go",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=970e93b9f82e2a0f3675757eb0bfc73297cc6370",
-      "name": "go-1.23.3",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "go-1.24.1",
       "pname": "go",
-      "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
-      "rev_count": 713897,
-      "rev_date": "2024-11-28T23:45:21Z",
-      "scrape_date": "2024-12-01T03:54:50Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:10:55.796320Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.23.3",
+      "version": "1.24.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/qrj2wp6vzfpjfrrlcmr22818zg83fb73-go-1.23.3"
+        "out": "/nix/store/jp3z5jp9gaxsw7fdzbqn29aabmrxq62j-go-1.24.1"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",

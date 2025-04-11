@@ -37,18 +37,10 @@
     },
     "services": {
       "frontend": {
-        "command": "python -m http.server",
-        "vars": null,
-        "is-daemon": null,
-        "shutdown": null,
-        "systems": null
+        "command": "python -m http.server"
       },
       "proxy": {
-        "command": "node proxy.mjs",
-        "vars": null,
-        "is-daemon": null,
-        "shutdown": null,
-        "systems": null
+        "command": "node proxy.mjs"
       }
     }
   },
@@ -56,32 +48,32 @@
     {
       "attr_path": "bash",
       "broken": false,
-      "derivation": "/nix/store/7yi6p5awm11k4grm5pqaq6ml1s3czr4z-bash-5.2p37.drv",
-      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux",
+      "derivation": "/nix/store/gyvabdm76bf3jxi6xzjkqclwyhnhkiqz-bash-interactive-5.2p37.drv",
+      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux (for interactive use)",
       "install_id": "bash",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "bash-5.2p37",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "bash-interactive-5.2p37",
       "pname": "bash",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:10:55.016950Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
       "version": "5.2p37",
       "outputs_to_install": [
-        "out",
-        "man"
+        "man",
+        "out"
       ],
       "outputs": {
-        "dev": "/nix/store/pxc3jga6jqr1mdjw1abmxqp95pz69xfq-bash-5.2p37-dev",
-        "doc": "/nix/store/1s6pf1kfmablj7da6m4ywnmwjiqhc1yv-bash-5.2p37-doc",
-        "info": "/nix/store/33nn1i4rpmd6hnh591xkshn3byw1d97d-bash-5.2p37-info",
-        "man": "/nix/store/rq28j7dff9y6a4m2vzi6mc1zbndcxl3y-bash-5.2p37-man",
-        "out": "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37"
+        "dev": "/nix/store/fqk7sya4w9n58q0xar7qc9d34i2smfzm-bash-interactive-5.2p37-dev",
+        "doc": "/nix/store/ysr65r7iwb4s3rnzcviaq0yg6i8mv2jb-bash-interactive-5.2p37-doc",
+        "info": "/nix/store/7ikpxm6kb5bgw5q3ksk04ibhrv093pkl-bash-interactive-5.2p37-info",
+        "man": "/nix/store/jyfz8qz73fa4kngy159vgpcqm6gqxpwq-bash-interactive-5.2p37-man",
+        "out": "/nix/store/12vsac4mcqapklipi16fqf9x4bs8q27f-bash-interactive-5.2p37"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -90,33 +82,33 @@
     {
       "attr_path": "bash",
       "broken": false,
-      "derivation": "/nix/store/1wf003zf8kkj6krjdj3jgv7qcbfkssgz-bash-5.2p37.drv",
-      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux",
+      "derivation": "/nix/store/g4i7qaxdzaq7h74da8y10fvrv098qa13-bash-interactive-5.2p37.drv",
+      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux (for interactive use)",
       "install_id": "bash",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "bash-5.2p37",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "bash-interactive-5.2p37",
       "pname": "bash",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:27:37.447240Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
       "version": "5.2p37",
       "outputs_to_install": [
-        "out",
-        "man"
+        "man",
+        "out"
       ],
       "outputs": {
-        "debug": "/nix/store/swfbd3q8bqxb7z3f8cgy138zn8a2aypq-bash-5.2p37-debug",
-        "dev": "/nix/store/hzrwnafym6h3d6i2y6vqaax5nnvn4h7y-bash-5.2p37-dev",
-        "doc": "/nix/store/jc0jm6zxlx6j67ns2f4cq1xz1f07hsg5-bash-5.2p37-doc",
-        "info": "/nix/store/xy8v4sskvsnxsajv7clvakbq83mlly0a-bash-5.2p37-info",
-        "man": "/nix/store/pwm8k0dabc0p38q4phqckr1hynjrwrym-bash-5.2p37-man",
-        "out": "/nix/store/4vvkmiq95x6zzz82lcsbq8607x5v7aws-bash-5.2p37"
+        "debug": "/nix/store/02winmp1g2vi58y1a8yrz2njls6d3dci-bash-interactive-5.2p37-debug",
+        "dev": "/nix/store/rl544i03kfkramw6w51kmbnvvv1df582-bash-interactive-5.2p37-dev",
+        "doc": "/nix/store/zrr8mfdxhd8rqmjxhxzkniyr1lvdzi4g-bash-interactive-5.2p37-doc",
+        "info": "/nix/store/fzw3i7b4jwmwym5f46sxzr1kg1hi004v-bash-interactive-5.2p37-info",
+        "man": "/nix/store/r5jjrhyzgpdp9yycsv6fflhr2b955ch1-bash-interactive-5.2p37-man",
+        "out": "/nix/store/lq016hgcw33y0kb71p6yl6fpijplrci1-bash-interactive-5.2p37"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -125,32 +117,32 @@
     {
       "attr_path": "bash",
       "broken": false,
-      "derivation": "/nix/store/vqf57k571z3812rxbvc04nphll4ipclk-bash-5.2p37.drv",
-      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux",
+      "derivation": "/nix/store/8yhgkz73mymnrwq7hnd63fz35m3dl88x-bash-interactive-5.2p37.drv",
+      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux (for interactive use)",
       "install_id": "bash",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "bash-5.2p37",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "bash-interactive-5.2p37",
       "pname": "bash",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:43:04.064151Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
       "version": "5.2p37",
       "outputs_to_install": [
-        "out",
-        "man"
+        "man",
+        "out"
       ],
       "outputs": {
-        "dev": "/nix/store/kx5c1nm14nss1x8zlrv94kydzpyc7v6v-bash-5.2p37-dev",
-        "doc": "/nix/store/pk7cdxzaq162m41jfhm6c498jxprpic5-bash-5.2p37-doc",
-        "info": "/nix/store/278h0v9awxh7v6c57gy9x82aib5kk5y4-bash-5.2p37-info",
-        "man": "/nix/store/51pxaqn8p40j3mx25shi9clx0qrpnas1-bash-5.2p37-man",
-        "out": "/nix/store/fhngvmgagwwxhak8nzrx5vqbg4g4qiac-bash-5.2p37"
+        "dev": "/nix/store/lnrdqsyhwlki5v116bna5n4m88cw97pc-bash-interactive-5.2p37-dev",
+        "doc": "/nix/store/fs481fj8xfypkg58ajwjn51dspjq3dxj-bash-interactive-5.2p37-doc",
+        "info": "/nix/store/r4l7sybwj4lspkx18z592m1mkvqrywq6-bash-interactive-5.2p37-info",
+        "man": "/nix/store/v470z1yqkgya7jhbrm6rm7n6ab3vq33x-bash-interactive-5.2p37-man",
+        "out": "/nix/store/fpxya1lqpk04m8f3v6iyryiq2z61pcz5-bash-interactive-5.2p37"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -159,33 +151,33 @@
     {
       "attr_path": "bash",
       "broken": false,
-      "derivation": "/nix/store/vjznlmanjkps53l7hw2krvpzwqcd5m3d-bash-5.2p37.drv",
-      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux",
+      "derivation": "/nix/store/cyady4h403xjcm76czmlv9bibpacp5k9-bash-interactive-5.2p37.drv",
+      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux (for interactive use)",
       "install_id": "bash",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "bash-5.2p37",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "bash-interactive-5.2p37",
       "pname": "bash",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T02:01:16.489661Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
       "version": "5.2p37",
       "outputs_to_install": [
-        "out",
-        "man"
+        "man",
+        "out"
       ],
       "outputs": {
-        "debug": "/nix/store/wl3l4726rwry87islbskryxawv9lk5b8-bash-5.2p37-debug",
-        "dev": "/nix/store/z9vnzv0l6mavbajksfd7j8c5isa6xjmk-bash-5.2p37-dev",
-        "doc": "/nix/store/pn0qa20b8r3iflcw9kpswrvx4l9l3pi2-bash-5.2p37-doc",
-        "info": "/nix/store/4bjyxz377l441qyczlvn1ksyx19kiil6-bash-5.2p37-info",
-        "man": "/nix/store/9arlgfqcpkmvck166bmhfvvkyvbkj83h-bash-5.2p37-man",
-        "out": "/nix/store/0irlcqx2n3qm6b1pc9rsd2i8qpvcccaj-bash-5.2p37"
+        "debug": "/nix/store/84fmihpikkcljzmw28v23qpw02p5dwr7-bash-interactive-5.2p37-debug",
+        "dev": "/nix/store/bwyhm24q23aggjamgb382bxksan98mi0-bash-interactive-5.2p37-dev",
+        "doc": "/nix/store/sgw8rk2aijx0kn7mzg0dzmv486ydamqz-bash-interactive-5.2p37-doc",
+        "info": "/nix/store/646z5wp9gz07fkp8ffrgpr9fvpxjcm0z-bash-interactive-5.2p37-info",
+        "man": "/nix/store/cq2irdgh5ijj948lradamq0n8n7m1ihn-bash-interactive-5.2p37-man",
+        "out": "/nix/store/cvlbhhrvzfkjl2hrrzhq3vr5gzan1r60-bash-interactive-5.2p37"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -194,30 +186,30 @@
     {
       "attr_path": "gnumake",
       "broken": false,
-      "derivation": "/nix/store/ld3qr4qalsc8i0si45fhjysnd8zkllxl-gnumake-4.4.1.drv",
+      "derivation": "/nix/store/z0vyvvm3cqlwx4wxm7vs3y2n0yvb13l5-gnumake-4.4.1.drv",
       "description": "Tool to control the generation of non-source files from sources",
       "install_id": "gnumake",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
       "name": "gnumake-4.4.1",
       "pname": "gnumake",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:10:55.790120Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
       "version": "4.4.1",
       "outputs_to_install": [
-        "out",
-        "man"
+        "man",
+        "out"
       ],
       "outputs": {
-        "info": "/nix/store/00ypq3z6m7imw786m7fcdr6f0f384s90-gnumake-4.4.1-info",
-        "man": "/nix/store/7k3yfg53wlkfxjaflnh8cswkpdz1xm8z-gnumake-4.4.1-man",
-        "out": "/nix/store/0gqbh56qwj0cxmvl7dajic9mkbc26ilc-gnumake-4.4.1"
+        "info": "/nix/store/c5jccx4albc6g0fcxa4ghwg27945fnby-gnumake-4.4.1-info",
+        "man": "/nix/store/mvygvl0jxvci87m9j9r393ri5jsz2ybq-gnumake-4.4.1-man",
+        "out": "/nix/store/cnkfqpa3kyi3mgk0yd8lqbrdysq7j38q-gnumake-4.4.1"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -226,31 +218,31 @@
     {
       "attr_path": "gnumake",
       "broken": false,
-      "derivation": "/nix/store/1q1pqa74dr4sgzzy8szzsw27faa58lpi-gnumake-4.4.1.drv",
+      "derivation": "/nix/store/d3wschhaqb4bwzzy11wsr7a1xxhv5krs-gnumake-4.4.1.drv",
       "description": "Tool to control the generation of non-source files from sources",
       "install_id": "gnumake",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
       "name": "gnumake-4.4.1",
       "pname": "gnumake",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:27:39.005647Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
       "version": "4.4.1",
       "outputs_to_install": [
-        "out",
-        "man"
+        "man",
+        "out"
       ],
       "outputs": {
-        "debug": "/nix/store/yyh2bg6gf2fkg1naqndr21zim3i60l2c-gnumake-4.4.1-debug",
-        "info": "/nix/store/ai7s9s57h8283r7rpbw4d7nbq7hgx3ac-gnumake-4.4.1-info",
-        "man": "/nix/store/fb4zh233hgpx37wzm6gv56hvqzcl8lp0-gnumake-4.4.1-man",
-        "out": "/nix/store/4n915dnxxga9hd6djx0k3g311ww1ga8v-gnumake-4.4.1"
+        "debug": "/nix/store/yrfbzz0whhvibv18f2zb6a4l671ryrdk-gnumake-4.4.1-debug",
+        "info": "/nix/store/crfkqwk94z3mvshp5yigwgayxypr7rzr-gnumake-4.4.1-info",
+        "man": "/nix/store/a5lgpaf6b9rm3czp8bv6fw84152rsk08-gnumake-4.4.1-man",
+        "out": "/nix/store/jp96c7glhd39jvym2qxrrqbyjlbn4jg8-gnumake-4.4.1"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -259,30 +251,30 @@
     {
       "attr_path": "gnumake",
       "broken": false,
-      "derivation": "/nix/store/f6hgzkb9gzg5aiwix6la22fdz9vm0m1f-gnumake-4.4.1.drv",
+      "derivation": "/nix/store/4843xfb5xlx9nwjm9l74ggkg9df50308-gnumake-4.4.1.drv",
       "description": "Tool to control the generation of non-source files from sources",
       "install_id": "gnumake",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
       "name": "gnumake-4.4.1",
       "pname": "gnumake",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:43:04.879262Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
       "version": "4.4.1",
       "outputs_to_install": [
-        "out",
-        "man"
+        "man",
+        "out"
       ],
       "outputs": {
-        "info": "/nix/store/99iicq73zij6klmpw3lhcy1kh95lnl63-gnumake-4.4.1-info",
-        "man": "/nix/store/8a3bjif0mwlhm7pybzclp5hlswmmcjd5-gnumake-4.4.1-man",
-        "out": "/nix/store/wqz4s9ij68jmnp7nphvkh22cbfapmk1w-gnumake-4.4.1"
+        "info": "/nix/store/sqzsgjrslilvvs25b1rwkxr0vqwgy4n5-gnumake-4.4.1-info",
+        "man": "/nix/store/xk3mk8ilcibjnh3yhakmii8drsxy25p3-gnumake-4.4.1-man",
+        "out": "/nix/store/yfkp7d7jj5m467qrss5p1c26j8pbqmx9-gnumake-4.4.1"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -291,31 +283,31 @@
     {
       "attr_path": "gnumake",
       "broken": false,
-      "derivation": "/nix/store/sdylskd3c6hp3wsnhy3r18jhipifnfyx-gnumake-4.4.1.drv",
+      "derivation": "/nix/store/r2xhnjg5n3mnly8b7l91jjfza4qdrsjh-gnumake-4.4.1.drv",
       "description": "Tool to control the generation of non-source files from sources",
       "install_id": "gnumake",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
       "name": "gnumake-4.4.1",
       "pname": "gnumake",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T02:01:18.212876Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
       "version": "4.4.1",
       "outputs_to_install": [
-        "out",
-        "man"
+        "man",
+        "out"
       ],
       "outputs": {
-        "debug": "/nix/store/z66scq04p9khp2p47y7gwjzlp18rkflj-gnumake-4.4.1-debug",
-        "info": "/nix/store/vxki0gd4zq5ighs0y2g629r763mm3n7a-gnumake-4.4.1-info",
-        "man": "/nix/store/zs8ijd334lhdnghc7n24z0bq7w7f7dc0-gnumake-4.4.1-man",
-        "out": "/nix/store/7nvps9mhddbqfhpbwsw87dh0nql2kljb-gnumake-4.4.1"
+        "debug": "/nix/store/40rj5d3igp9fb80r4pg3gnkzj338rffa-gnumake-4.4.1-debug",
+        "info": "/nix/store/33lvx5blf6ms1b6ynaln49hx1xksypxf-gnumake-4.4.1-info",
+        "man": "/nix/store/y87b22iwv64wrfpgyii4gjgbhcfqq0mi-gnumake-4.4.1-man",
+        "out": "/nix/store/k0hhyz6qnj5065vpw15m4r7nbs0mn706-gnumake-4.4.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -324,17 +316,17 @@
     {
       "attr_path": "jq",
       "broken": false,
-      "derivation": "/nix/store/cbv85z7dsvkmskklg821vvp8vwpr4hf1-jq-1.7.1.drv",
+      "derivation": "/nix/store/6z96kxh02qgqsijrnmjwinj6fp12y7rz-jq-1.7.1.drv",
       "description": "Lightweight and flexible command-line JSON processor",
       "install_id": "jq",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
       "name": "jq-1.7.1",
       "pname": "jq",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:10:56.221941Z",
       "stabilities": [
         "unstable"
       ],
@@ -345,11 +337,11 @@
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/1ayrnq8zpljx4m3kvgfs6kqv9vrm6zik-jq-1.7.1-bin",
-        "dev": "/nix/store/05c8mk6qnrxgyazs2acg3816h57lvsvb-jq-1.7.1-dev",
-        "doc": "/nix/store/zm4966xz8nyp9nzkn6ghhzh8hcw87bmv-jq-1.7.1-doc",
-        "man": "/nix/store/fy9h4wlb4a8r34jrqif25n2i24vaw9x2-jq-1.7.1-man",
-        "out": "/nix/store/1ldq0nn6gjpxqjxihzdd7vlppmxvmpxn-jq-1.7.1"
+        "bin": "/nix/store/6njxc4ma96r9qc88scwsmnh64a086yrn-jq-1.7.1-bin",
+        "dev": "/nix/store/haxb6i05p1ganzinkzk3xib7d8zg2zzd-jq-1.7.1-dev",
+        "doc": "/nix/store/d1ij699i2mbwix1my3b8k7ckfykhrp1m-jq-1.7.1-doc",
+        "man": "/nix/store/806zwhmy9qkp695x9y4c373fpcz8ql7i-jq-1.7.1-man",
+        "out": "/nix/store/7h4z72g5bpfwcnmc0a77x3aqp8vg0h0f-jq-1.7.1"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -358,17 +350,17 @@
     {
       "attr_path": "jq",
       "broken": false,
-      "derivation": "/nix/store/6zzykid21phpdi914nag9sb36an76iy9-jq-1.7.1.drv",
+      "derivation": "/nix/store/3rlq768kxmnb2xlhw5agkx2b69yzcaw0-jq-1.7.1.drv",
       "description": "Lightweight and flexible command-line JSON processor",
       "install_id": "jq",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
       "name": "jq-1.7.1",
       "pname": "jq",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:27:40.238019Z",
       "stabilities": [
         "unstable"
       ],
@@ -379,11 +371,11 @@
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/pixiqvakc6rxc10qfpy2w4dsgnmsdayv-jq-1.7.1-bin",
-        "dev": "/nix/store/gn12vqlhg68r5gwsacsiksqm6255nl3s-jq-1.7.1-dev",
-        "doc": "/nix/store/v8cvxadadrrvi8as046wiyzb96xvih19-jq-1.7.1-doc",
-        "man": "/nix/store/fgjncriv2sc52b8lwm5kzabkq26kirvk-jq-1.7.1-man",
-        "out": "/nix/store/5xm3x3a9jaq9fy4jrg44rk7b6hl9sgbv-jq-1.7.1"
+        "bin": "/nix/store/xv6l5qpmjm1cm1v519d3zzx72givc912-jq-1.7.1-bin",
+        "dev": "/nix/store/79rh194hlm4y033ry74mhm5c1gzhicxh-jq-1.7.1-dev",
+        "doc": "/nix/store/58k6ajhi376snpa2qx9nmismqwr23fi6-jq-1.7.1-doc",
+        "man": "/nix/store/pbq5gvwvgbfx0njjvx7zaijhn9jxgv9j-jq-1.7.1-man",
+        "out": "/nix/store/dr03sim3pqyxh2aakwzmp19l54alic6c-jq-1.7.1"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -392,17 +384,17 @@
     {
       "attr_path": "jq",
       "broken": false,
-      "derivation": "/nix/store/b2m8mmxr0wgqwhqnv5wgd9455kq2mzl0-jq-1.7.1.drv",
+      "derivation": "/nix/store/zmkav0cix9zzfxrsa6p4m8nri11fra6a-jq-1.7.1.drv",
       "description": "Lightweight and flexible command-line JSON processor",
       "install_id": "jq",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
       "name": "jq-1.7.1",
       "pname": "jq",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:43:05.325998Z",
       "stabilities": [
         "unstable"
       ],
@@ -413,11 +405,11 @@
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/g6m0ggpijkm26ygd8vvhyd07sgriz26j-jq-1.7.1-bin",
-        "dev": "/nix/store/cybp745j7fvdnxkf9889wiscn9cgbwjp-jq-1.7.1-dev",
-        "doc": "/nix/store/0yhbxjsrbh7g6x7ngfc1qg6q613qbqhp-jq-1.7.1-doc",
-        "man": "/nix/store/gr5mmlwr3y511brhq7nihbyixjhcn80k-jq-1.7.1-man",
-        "out": "/nix/store/ganc2d577ffr1h3qcvxln1d5gn6z3m83-jq-1.7.1"
+        "bin": "/nix/store/8xh7an43y0xkawgf0pb7mxvcr20l17qh-jq-1.7.1-bin",
+        "dev": "/nix/store/x1rvxbvad0bkmrb849likb36kp44p6k3-jq-1.7.1-dev",
+        "doc": "/nix/store/y7riwf6jr799jvd9v8aj5626ix6w4s6v-jq-1.7.1-doc",
+        "man": "/nix/store/72iz7d48dslq7dlba92f72gcqiwy1bnv-jq-1.7.1-man",
+        "out": "/nix/store/yv3i7vxi014xhly4dv8lkgh05p2n5wsy-jq-1.7.1"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -426,17 +418,17 @@
     {
       "attr_path": "jq",
       "broken": false,
-      "derivation": "/nix/store/v9r017rn3g6zfz45ncra2bb93qafxipm-jq-1.7.1.drv",
+      "derivation": "/nix/store/xj3mvhr7yhby45jw4h3rzlshy0zd2ipp-jq-1.7.1.drv",
       "description": "Lightweight and flexible command-line JSON processor",
       "install_id": "jq",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
       "name": "jq-1.7.1",
       "pname": "jq",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T02:01:19.578924Z",
       "stabilities": [
         "unstable"
       ],
@@ -447,11 +439,11 @@
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/75q9nlm0zn7cg6w151cc4mkqqk0mwaxa-jq-1.7.1-bin",
-        "dev": "/nix/store/f5y04jklz034w0y55bnqhcfnd271spwa-jq-1.7.1-dev",
-        "doc": "/nix/store/j0i0bzx90l10l3vxdwj29xjji1avp15a-jq-1.7.1-doc",
-        "man": "/nix/store/3wwkjcpxyrryfb1dbxjp82kj8g8jaxzw-jq-1.7.1-man",
-        "out": "/nix/store/cpzlrkcbp2s87aya4hfxigj6a68m6yzz-jq-1.7.1"
+        "bin": "/nix/store/gpxsdrrd4x93fs75395vr2dfys1ki9mq-jq-1.7.1-bin",
+        "dev": "/nix/store/ld8ys81ch5fj94j0jrwbkgwwjxmbwdxh-jq-1.7.1-dev",
+        "doc": "/nix/store/nhg3x57268kb3q1021w3m002xxqpj50w-jq-1.7.1-doc",
+        "man": "/nix/store/0h33kdarki6bp6pwf7xc5rzjnx8ky4j4-jq-1.7.1-man",
+        "out": "/nix/store/ma6hybrgazb471pd53mwnvh1vsv87cxb-jq-1.7.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -460,28 +452,28 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/v0v7dny82f4hmfp9s8zj31iykjrdblkn-nodejs-20.18.0.drv",
+      "derivation": "/nix/store/v4xdr255vdcghnqyvk7ih2ppvx0lapfk-nodejs-22.14.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "nodejs-20.18.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "nodejs-22.14.0",
       "pname": "nodejs",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:10:58.100193Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "20.18.0",
+      "version": "22.14.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "libv8": "/nix/store/hfchgw1as9fm02wcyr3iqya05ylll5f3-nodejs-20.18.0-libv8",
-        "out": "/nix/store/9grahx8677nlgbx3yfiggibw335lkgfr-nodejs-20.18.0"
+        "libv8": "/nix/store/4m6xhygkx74fsd5k99nihgr7vg85f553-nodejs-22.14.0-libv8",
+        "out": "/nix/store/i1v519j66jmvpqr5h382i9nanxwa5l6n-nodejs-22.14.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -490,28 +482,28 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/d3mn4dx774ppvnajxls24jkgsscv4sq5-nodejs-20.18.0.drv",
+      "derivation": "/nix/store/6678kk8l6dfvfawlpf8smjm0b6zinn2f-nodejs-22.14.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "nodejs-20.18.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "nodejs-22.14.0",
       "pname": "nodejs",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:27:47.911405Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "20.18.0",
+      "version": "22.14.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "libv8": "/nix/store/yajvza262cb3bri9cryfrgpm3pvc066n-nodejs-20.18.0-libv8",
-        "out": "/nix/store/hsh74yzdb9yk834w9j5qz0w3sw84wcfv-nodejs-20.18.0"
+        "libv8": "/nix/store/s8407q9aa2mi2b60zk2mkjjdnv4qw87x-nodejs-22.14.0-libv8",
+        "out": "/nix/store/p6183qmkyfkz5sqlv4wbw6a2nnh1r8jf-nodejs-22.14.0"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -520,28 +512,28 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/lmn1hdq8i3gf5d3r64l13nhanlb2pnx5-nodejs-20.18.0.drv",
+      "derivation": "/nix/store/zal73kvqhchl43qs2x7p5cvp57ypd4n3-nodejs-22.14.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "nodejs-20.18.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "nodejs-22.14.0",
       "pname": "nodejs",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:43:07.223794Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "20.18.0",
+      "version": "22.14.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "libv8": "/nix/store/93xdzgjsm1dnnw33lnba4i7h7k5yph4k-nodejs-20.18.0-libv8",
-        "out": "/nix/store/v8p36abnvrn9i5h41zkgrayaj7sclv6z-nodejs-20.18.0"
+        "libv8": "/nix/store/sx5pbfq09qkl6bfxcljmhf5s1z049693-nodejs-22.14.0-libv8",
+        "out": "/nix/store/mxpq0x25ayiliy6938pflhqvfc1nznkl-nodejs-22.14.0"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -550,28 +542,28 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/l136ajs6lg3mic58rnb7cdwhfhl3qcyr-nodejs-20.18.0.drv",
+      "derivation": "/nix/store/2v66xkgfmdipzpwgl813n4mqgck6w3fd-nodejs-22.14.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "nodejs-20.18.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "nodejs-22.14.0",
       "pname": "nodejs",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T02:01:28.830311Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "20.18.0",
+      "version": "22.14.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "libv8": "/nix/store/czcxwki3zqih2pf355zk0vxbmrij2bzx-nodejs-20.18.0-libv8",
-        "out": "/nix/store/z0ivg3dbal4sk5h0c7p1pfkxc7ff98ri-nodejs-20.18.0"
+        "libv8": "/nix/store/j4w6685rkqwwl03cc8phm8xiyb2xmbnq-nodejs-22.14.0-libv8",
+        "out": "/nix/store/bmakyv5ip1wc9jk155glzdw4vnnrym04-nodejs-22.14.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -580,27 +572,27 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/m8mnjdqkq6pp69hf4lsqd1pmx3yqnmdy-python3-3.12.7.drv",
+      "derivation": "/nix/store/bdsil73qdi3anlff462vyflfyz9hl3ny-python3-3.12.9.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "python3-3.12.7",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "python3-3.12.9",
       "pname": "python3",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:11:04.039426Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.12.7",
+      "version": "3.12.9",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/zyak8iqzh1ww83qa4sqwwz3qax0lrky7-python3-3.12.7"
+        "out": "/nix/store/3p3agnh4792y8bgjp0s8xx5bym1ahpks-python3-3.12.9"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -609,28 +601,28 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/ni1cpv0m2lcpzd8c0g0f0hy86r405h5d-python3-3.12.7.drv",
+      "derivation": "/nix/store/bqiirv87dk88ipl1g0wn49a501dgyarn-python3-3.12.9.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "python3-3.12.7",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "python3-3.12.9",
       "pname": "python3",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:27:59.023987Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.12.7",
+      "version": "3.12.9",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "debug": "/nix/store/fdldrf7jicbx1v2yn2jj4rp1gwcin5vy-python3-3.12.7-debug",
-        "out": "/nix/store/imz4prdh762l7jvwak2s7pqpq6hy5fyy-python3-3.12.7"
+        "debug": "/nix/store/p2ym34g9y2w9k3w2pgbj2akn7b5l6xlh-python3-3.12.9-debug",
+        "out": "/nix/store/cxhrrsf7spcgdkrxmlbfzc1bh46rzf7w-python3-3.12.9"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -639,27 +631,27 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/2my4flhwy6npmzmq9l8cb83c5a4v7b4b-python3-3.12.7.drv",
+      "derivation": "/nix/store/k4a6ydp4ij2vzpk6zfgffx5yy9d58253-python3-3.12.9.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "python3-3.12.7",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "python3-3.12.9",
       "pname": "python3",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T01:43:13.234505Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.12.7",
+      "version": "3.12.9",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/q2vqbhlx0i0k5bfavk04wiknrf7ygqls-python3-3.12.7"
+        "out": "/nix/store/8fw6a4is5mkpmr9vd80inz63qdi130m3-python3-3.12.9"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -668,28 +660,28 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/dg5sw7q1rk0fjy6d91asvgf603j8k1qb-python3-3.12.7.drv",
+      "derivation": "/nix/store/xw08jjh95zyqrmanqwkdcyd97rg4wsxp-python3-3.12.9.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "name": "python3-3.12.7",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "name": "python3-3.12.9",
       "pname": "python3",
-      "rev": "ac35b104800bff9028425fec3b6e8a41de2bbfff",
-      "rev_count": 714768,
-      "rev_date": "2024-12-01T01:19:13Z",
-      "scrape_date": "2024-12-03T03:55:23Z",
+      "rev": "c8cd81426f45942bb2906d5ed2fe21d2f19d95b7",
+      "rev_count": 780821,
+      "rev_date": "2025-04-08T07:41:42Z",
+      "scrape_date": "2025-04-10T02:01:40.886670Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.12.7",
+      "version": "3.12.9",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "debug": "/nix/store/l13c89ykx82ffm2y025fnngszchsgq6b-python3-3.12.7-debug",
-        "out": "/nix/store/px2nj16i5gc3d4mnw5l1nclfdxhry61p-python3-3.12.7"
+        "debug": "/nix/store/1kjknndig10774mkf6b2b95kn17q4rm5-python3-3.12.9-debug",
+        "out": "/nix/store/f2krmq3iv5nibcvn4rw7nrnrciqprdkh-python3-3.12.9"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
