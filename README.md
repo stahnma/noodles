@@ -36,7 +36,7 @@ Ensure this token is set in your shell environment where you plan to run the scr
      go mod tidy
      go build .
 
-## Running as a  lambda
+## Running as via serverless
 
 The `Makefile` contains targets to set up or update the code for the lambda.
 
